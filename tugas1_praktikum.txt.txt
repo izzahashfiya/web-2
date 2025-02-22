@@ -1,0 +1,5 @@
+1. Dokumen Root
+Dokumen root adalah direktori utama yang berisi file-file dokumen (seperti HTML, CSS, JavaScript, dan lain-lain) yang diakses oleh web server. 
+Direktori ini juga biasanya ditentukan oleh konfigurasi web server dan berfungsi sebagai titik awal untuk mengakses file-file dokumen.
+2. Lokasi Dokumen Root pada Apache Web Server
+Tidak harus. Lokasi dokumen root pada Apache Web Server dapat diatur melalui file konfigurasi Apache (biasanya bernama httpd.conf atau apache2.conf). Direktori C:\xampp\htdocs adalah lokasi default dokumen root pada XAMPP, tetapi dapat diubah sesuai kebutuhan.
