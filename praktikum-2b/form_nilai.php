@@ -3,63 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Nilai</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sistem Penilaian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
-<body style="font-size: 18px;">
-    <form action="nilai_mahasiswa.php" method="POST" class="container mt-5">
-    <fieldset class="border border-dark p-3 rounded" style="background-color: #2980B9;">
-    <legend class="float-none w-auto px-3 fw-bold h3">Form Nilai Mahasiswa</legend>
-    <div class="form-group row">
-        <label for="nim" class="col-4 col-form-label">Nama</label>
-        <div class="col-8">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fa fa-adn"></i>
-              </div>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-left mb-4">Form Nilai Mahasiswa</h2>
+        <form action="nilai_mahasiswa.php" method="POST" class="border p-4 rounded">
+        <fieldset class="border border-dark p-3 rounded" style="background-color: #2980B9;">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama:</label>
+                <input type="text" class="form-control" id="nama" name="nama">
             </div>
-            <input id="nama" name="nama" placeholder="*Nama Mahasiswa" type="text" class="form-control" required="required" maxlength="50" minlength="3">
-          </div>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="matkul" class="col-4 col-form-label">Mata Kuliah</label>
-        <div class="col-8">
-            <select id="matkul" name="matkul" class="custom-select" required="required">
-                <option value="DDP">Dasar Dasar Pemrograman</option>
-                <option value="BD1">Basis Data</option>
-                <option value="WEB1">Pemrograman Web</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label for="nilai_uts" class="col-4 col-form-label">Nilai UTS</label>
-        <div class="col-8">
-            <input id="nilai_uts" name="nilai_uts" type="number" class="form-control" required="required" />
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="nilai_uas" class="col-4 col-form-label">Nilai UAS</label>
-        <div class="col-8">
-            <input id="nilai_uas" name="nilai_uas" type="number" class="form-control" required="required" />
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="nilai_tugas" class="col-4 col-form-label">Nilai Tugas/Praktikum</label>
-        <div class="col-8">
-            <input id="nilai_tugas" name="nilai_tugas" type="number" class="form-control" required="required" />
-        </div>
+            <div class="mb-3">
+                <label for="matkul" class="form-label">Mata Kuliah:</label>
+                <select class="form-select" id="matkul" name="matkul">
+                    <option value="DDP">Dasar Dasar Pemprograman</option>
+                    <option value="DB1">Basis Data</option>
+                    <option value="WEB1">Pemprograman Web</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="nilai_uts" class="form-label">Nilai UTS:</label>
+                <input type="number" class="form-control" id="nilai_uts" name="nilai_uts">
+            </div>
+            <div class="mb-3">
+                <label for="nilai_uas" class="form-label">Nilai UAS:</label>
+                <input type="number" class="form-control" id="nilai_uas" name="nilai_uas">
+            </div>
+            <div class="mb-3">
+                <label for="nilai_tugas" class="form-label">Nilai Tugas/Praktikum:</label>
+                <input type="number" class="form-control" id="nilai_tugas" name="nilai_tugas">
+            </div>
+            <button type="submit" class="btn btn-primary" value="Simpan" name="proses">Simpan</button>
+        </form>
     </div>
 
-    <div class="form-group row">
-        <div class="offset-4 col-8">
-            <button type="submit" name="proses" class="btn btn-primary">Simpan</button>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <style>
     .border-belize-hole {

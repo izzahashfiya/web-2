@@ -60,6 +60,19 @@
         </div>
     </div>
 
+    <div class="col-md-6">
+                <br>
+                <div class="harga-container">
+                    <h4 class="text-center">Daftar Harga</h4>
+                    <ul>
+                        <li><strong>TV</strong>: Rp 4.200.000</li>
+                        <li><strong>Kulkas</strong>: Rp 3.100.000</li>
+                        <li><strong>Mesin Cuci</strong>: Rp 3.800.000</li>
+                    </ul>
+                    <p class="text-muted text-center">Harga dapat berubah sewaktu-waktu</p>
+                </div>
+  </div>
+  
     <style>
     .border-belize-hole {
       background-color: #2980B9;
